@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+h2 {
+    padding: 20px 0 0;
+}
+
+.form-group {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-group select {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-group select:focus, .form-group select:hover {
+    border: 1px solid #68acf0;
+    box-shadow: 0 0 5px rgba(144, 196, 255, 0.56);
+}
+
+.form-group #result {
+    position: unset !important;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 65px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transform: translateY(0);
+}
+
+#copy {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#copy:hover {
+    background-color: #e3e3e3;
+}
+
+.form-group.checkbox {
+    position: relative;
+}
+
+.form-group.checkbox input {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.form-group.checkbox input:checked ~ label {
+    background-color: #f8faff;
+}
+
+.form-group.checkbox label {
+    display: block;
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-group.checkbox label:hover {
+    background-color: #f8faff;
+}
+
+.btn {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #207ad4;
+    outline: none;
+    border: 1px solid #0963b7;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #368bde;
+}
+
+label[for=upper-case]::after, label[for=number]::after {
+    content: "Highly Recommended";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff4f4f;
+    color: #a10e0e;
+    padding: 3px 9px;
+    border-radius: 50px;
+}
+
+label[for=symbol]::after {
+    content: "Recommended";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffcd71;
+    color: #a1660e;
+    padding: 3px 9px;
+    border-radius: 50px;
+}
